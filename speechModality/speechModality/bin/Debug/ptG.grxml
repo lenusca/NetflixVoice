@@ -1,0 +1,131 @@
+﻿<?xml version="1.0"?>
+<grammar xml:lang="pt-PT" version="1.0" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+	<rule id="rootRule" scope="public">
+	  <one-of>
+		  <item>
+			<ruleref uri="#object"/>
+		  </item>
+	  </one-of>
+	</rule>
+	<rule id="object">
+		<one-of>
+			<item>
+				<tag>out.Categoria = "PROFILE"</tag>
+				<one-of>
+					<item>
+						<ruleref uri="#profile"/>
+						<tag>out.profile = rules.profile.profile</tag>
+					</item>
+				</one-of>
+			</item>
+			<item>
+				<tag>out.Categoria = "NAVBAR"</tag>
+				<one-of>
+					<item>
+						<ruleref uri="#navbar"/>
+						<tag>out.navbar = rules.navbar.navbar</tag>
+					</item>
+				</one-of>
+			</item>
+			<item>
+				<tag>out.Categoria = "PLAYERCONTROLS"</tag>
+				<one-of>
+					<item>
+						<ruleref uri="#player_controls"/>
+						<tag>out.player_controls = rules.player_controls.player_controls</tag>
+					</item>
+				</one-of>
+			</item>
+     
+			
+		</one-of>
+	</rule>
+	<rule id="profile">
+	  <one-of>
+		<item>
+			Lenusca<tag>out.profile="Lenusca"</tag>
+		</item>
+		  <item>
+			  Entrar como Lenusca<tag>out.profile="Lenusca"</tag>
+		  </item>
+		<item>
+			Helena<tag>out.profile="Helena"</tag>
+		</item>
+		<item>
+			Entrar como Helena<tag>out.profile="Helena"</tag>
+		</item>
+		<item>
+			Carolina<tag>out.profile="Carolina"</tag>
+		</item>
+		<item>
+			Entrar como Carolina<tag>out.profile="Carolina"</tag>
+		</item>
+		<item>
+			Diana<tag>out.profile="Diana"</tag>
+		</item>
+		<item>
+			Entrar como Diana<tag>out.profile="Diana"</tag>
+		</item>  
+		<item>
+			Adicionar Perfil<tag>out.profile="Adicionar perfil"</tag>
+		</item>
+		  
+	  </one-of>
+	</rule>
+	<rule id="navbar">
+		<one-of>
+			<item>
+				Início<tag>out.navbar="Início"</tag>
+			</item>
+			<item>
+				Séries<tag>out.navbar="Séries"</tag>
+			</item>
+			<item>
+				Filmes<tag>out.navbar="Filmes"</tag>
+			</item>
+			<item>
+				Novos e mais vistos<tag>out.navbar="Novos e mais vistos"</tag>
+			</item>
+			<item>
+				A minha lista<tag>out.navbar="A minha lista"</tag>
+			</item>
+		</one-of>
+	</rule>
+	<rule id="player_controls">
+		<one-of>
+			<item>
+				Play<tag>out.player_controls="Ver"</tag>
+			</item>
+      <item>
+				Ver<tag>out.player_controls="Ver"</tag>
+			</item>
+			<item>
+				Avançar<tag>out.player_controls="Avançar"</tag>
+			</item>
+      <item>
+				Passar a frente<tag>out.player_controls="Avançar"</tag>
+			</item>
+			<item>
+				Retroceder<tag>out.player_controls="Retroceder"</tag>
+			</item>
+      <item>
+				Recuar<tag>out.player_controls="Retroceder"</tag>
+			</item>
+			<item>
+				Stop<tag>out.player_controls="Pausar"</tag>
+			</item>
+			<item>
+				Ecrã completo<tag>out.player_controls="Ecrã completo"</tag>
+			</item>
+			<item>
+				Maximizar<tag>out.player_controls="Ecrã completo"</tag>
+			</item>
+			<item>
+				Sair ecrã completo<tag>out.player_controls="Sair do ecrã completo"</tag>
+			</item>
+			<item>
+				Minimizar<tag>out.player_controls="Sair do ecrã completo"</tag>
+			</item>
+		</one-of>
+	</rule>
+</grammar>

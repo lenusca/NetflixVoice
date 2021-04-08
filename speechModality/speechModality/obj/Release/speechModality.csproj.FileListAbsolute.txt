@@ -1,0 +1,5 @@
+C:\Users\lenin\Google Drive\UA\5ano\Tese\IM\Assignment1\speechModality\speechModality\obj\Release\MainWindow.g.cs
+C:\Users\lenin\Google Drive\UA\5ano\Tese\IM\Assignment1\speechModality\speechModality\obj\Release\App.g.cs
+C:\Users\lenin\Google Drive\UA\5ano\Tese\IM\Assignment1\speechModality\speechModality\obj\Release\speechModality_Content.g.cs
+C:\Users\lenin\Google Drive\UA\5ano\Tese\IM\Assignment1\speechModality\speechModality\obj\Release\speechModality_MarkupCompile.cache
+C:\Users\lenin\Google Drive\UA\5ano\Tese\IM\Assignment1\speechModality\speechModality\obj\Release\speechModality_MarkupCompile.lref
